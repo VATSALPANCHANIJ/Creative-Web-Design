@@ -1,0 +1,177 @@
+* {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+      outline: none;
+      font-family: "Josefin Sans", system-ui;
+}
+
+:root {
+      /* Color Variables */
+      ---Primary-color: #f67b09;
+      --Secondary-color: #399abb;
+      --White-color: #ffffff;
+      --Black-color: #130b0b;
+
+      /* Logo Variable */
+      --logo: url('Assets/Images/Website_logo2.png');
+     --text-formate-logo: url('Assets/Images/Website_logo_text_formate.png');
+
+      /* Background-Color */
+      --Background-Color: rgba(255, 255, 255, 0.822);
+
+      /* Spacing Variables */
+      --spacing-xs: 10px;
+      --spacing-sm: 16px;
+      --spacing-s-sm: 20px;
+      --spacing-md: 25px;
+      --spacing-s-md: 30px;
+      --spacing-lg: 32px;
+
+      /* Font Size Variables */
+      --font-size-xs: 10px;
+      --font-size-sm: 16px;
+      --font-size-s-sm: 20px;
+      --font-size-md: 25px;
+      --font-size-s-md: 30px;
+      --font-size-lg: 32px;
+
+      /* Border-Radius */
+      --Border-radius-sm: 4px;
+      --Border-radius-md: 8px;
+      --Border-radius-lg: 12px;
+
+      /* Box-Shadow */
+      --Box-shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+      --box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);
+      --box-shadow-dark: 0 6px 12px rgba(0, 0, 0, 0.3);
+
+      /* Transitions */
+      --transition-speed-03: 0.3s;
+      --transition-timing: ease-in-out;
+}
+
+ul {
+      list-style: none;
+}
+
+.container {
+      max-width: 1140px;
+      margin: 0 auto;
+}
+
+.row {
+      display: flex;
+      flex-wrap: wrap;
+}
+
+a {
+      text-decoration: none;
+}
+
+.title-text {
+      padding-top: var(--spacing-s-sm);
+      color: #fff;
+      padding-left: var(--spacing-sm);
+      text-align: start;
+}
+
+.description {
+      color: var(--Black-color);
+      padding-left: var(--spacing-sm);
+      text-align: start;
+      font-size: var(--font-size-s-sm);
+
+      i {
+            color: var(--Black-color);
+            font-size: var(--font-size-s-sm);
+      }
+}
+
+/*  header-01 */
+.Section-01 {
+      height: 50vh;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-image: url('../Images/Fish_Background04.jpg');
+
+
+      .navbar {
+            margin: 25px;
+            background-color: rgba(255, 255, 255, 0.822);
+            border-radius: 20px;
+
+            .navbar-brand {
+                  img {
+                        width: 80px;
+                  }
+
+                  .navbar-toggler {
+                        border: none;
+                        outline: none;
+                        background-color: none;
+                  }
+
+                  .navbar-toggler:focus {
+                        box-shadow: none !important;
+                        outline: none;
+                  }
+            }
+
+            .offcanvas-header {
+                  img {
+                        width: 150px;
+                        object-fit: cover;
+                        object-position: center;
+                  }
+
+                  .btn-close {
+                        color: var(---Primary-color);
+                  }
+            }
+
+            .offcanvas-body {
+                  ul {
+                        li {
+                              a {
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    color: var(--Secondary-color);
+                                    transition: all 0.3s color;
+                              }
+
+                              a.active,
+                              a:hover {
+                                    color: var(---Primary-color);
+                                    transition: all 0.3s color;
+                              }
+
+                        }
+
+                  }
+
+                  .dropdown-menu {
+                        transition: all 0.5s;
+                        border: none;
+
+                        dropdown-item:focus,
+                        .dropdown-item:hover {
+                              color: var(---Primary-color);
+                              background-color: none !important;
+                        }
+                  }
+            }
+      }
+}
+
+.Section-02 {
+      height: 100vh;
+      background-image: url("../Images/Background_image03.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-top: var(--spacing-sm);
+}
